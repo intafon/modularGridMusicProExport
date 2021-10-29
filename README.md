@@ -2,7 +2,7 @@
 Script created in order to output the required data for the MusicPro insurance equipment list from a modulargrid.net rack.
 
 To use:
-- Open your rack in modulargrid.net
+- Open your rack in modulargrid.net. If you already have it open and/or have been editing the current rack, reload the page in the browser, as the data the script pulls from needs to be updated in the page.
 - Open the developer console, or javascript console in your browser (there are different ways to do this in different browsers).
 - Copy the contents of modularGridMusicProExport.js
 - Paste the contents into the entry point in the javascript Console in the browser (often has a > at the left). 

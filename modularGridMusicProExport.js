@@ -14,7 +14,9 @@ To use this open the browser console and paste in the bottom part.
     }
     let rack = JSON.parse(document.querySelector("script[data-mg-json=rtd]").innerText).rack;
     let modules = rack.Module.filter((module) => (module.ModulesRack.is_inbounds));
+    let looseModules = rack.Module.filter((module) => (!module.ModulesRack.is_inbounds));
     console.info("modules:", modules);
+    console.info("loose modules", looseModules);
     let priceTotal = 0;
     let outStr = "";
     modules.sort((a, b) => {
